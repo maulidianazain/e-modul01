@@ -1,0 +1,132 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.Tentang_kami {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Memberikan jarak antara navigasi dan form kontak */
+@media screen and (min-width: 768px) {
+  .contact-form {
+    margin-top: 150px; /* Menambahkan margin top di layar yang lebih besar */
+  }
+}
+
+/* logo dan navigasi */
+.logo-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 550;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #168dce;
+}
+
+header nav ul li a.kontak {
+  text-decoration: underline;
+}
+
+/* Form Kontak */
+.contact-form {
+  margin: 0 auto; /* Menengahkan form */
+  max-width: 600px; /* Membatasi lebar form */
+  background-color: #ffffff; /* Mengubah warna latar belakang */
+  padding: 30px; /* Meningkatkan padding untuk memberi ruang pada konten form */
+  border-radius: 10px; /* Mengatur border radius untuk memberi sudut yang lebih halus */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan shadow untuk memberi efek melayang */
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.contact-form h3 {
+  font-size: 20px; /* Menambahkan ukuran font yang lebih besar */
+  margin-bottom: 20px;
+  color: #333; /* Ubah warna teks */
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Ubah warna teks */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px; /* Menambahkan padding yang lebih kecil */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Mengatur border radius yang lebih halus */
+  transition: border-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: #168dce; /* Mengubah warna border saat elemen fokus */
+}
+
+button[type="submit"] {
+  background-color: #168dce;
+  color: #fff;
+  border: none;
+  padding: 12px 20px; /* Menambahkan padding yang lebih kecil */
+  border-radius: 8px; /* Mengatur border radius yang lebih halus */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 12px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ed3361;
+}

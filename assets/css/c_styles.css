@@ -1,0 +1,190 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* logo dan navigasi */
+.logo-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 550;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ed3361;
+}
+
+nav ul li a.cari {
+  text-decoration: underline;
+}
+
+/* konten 2 cari dan daftar modul */
+.container-modul {
+  max-width: 900px;
+  margin: 150px auto 20px; /* Menambahkan margin-top agar tidak terlalu berdekatan dengan navigasi */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.container-modul h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.container-modul h3 {
+  font-weight: 550;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.module-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.module-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f2f2f2;
+  overflow: hidden;
+  aspect-ratio: 512/800;
+  max-width: 200px;
+  max-height: 460px;
+}
+
+.module-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.download-link {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #168dce;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #ed3361;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .container-modul {
+    padding: 15px;
+  }
+
+  .module-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .module-card h3 {
+    font-size: 14px;
+  }
+
+  .module-card p {
+    font-size: 12px;
+  }
+}
+
+/* Konten 3 Video dan Modul */
+.container-video-modul {
+  max-width: 900px;
+  margin: 20px auto; /* Menambahkan margin-top agar tidak terlalu berdekatan dengan navigasi */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 200px;
+  margin-bottom: 25px;
+}
+
+.container-video-modul h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.container-video-modul h3 {
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 550;
+  margin-bottom: 5px;
+}
+
+.container-video-modul h4 {
+  margin-top: 4px;
+  text-align: left;
+  font-weight: 400;
+}

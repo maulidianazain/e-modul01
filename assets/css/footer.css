@@ -1,0 +1,59 @@
+/* CSS untuk footer */
+footer {
+  background-color: #168dce;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-column {
+  flex: 1 1 25%;
+  margin-bottom: 30px;
+}
+
+.footer-content h3 {
+  font-size: 14px;
+  margin-bottom: 16px;
+  font-weight: 550;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.social-media {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  display: flex; /* Menjadikan konten link menjadi flex */
+  align-items: center; /* Mengatur konten link ke tengah secara vertikal */
+}
+
+.social-media a i {
+  margin-right: 5px; /* Menambahkan jarak antara ikon dan teks */
+}
+
+/* Hak cipta */
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+}
